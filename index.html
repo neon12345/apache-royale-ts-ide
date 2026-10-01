@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="App.min.css">
+  <title>Royale IDE</title>
+  <link rel="stylesheet" type="text/css" href="css/dialog-polyfill.min.css">
+  <script src="scripts/dialog-polyfill.min.js"></script>
+  <script src="scripts/ace.js"></script>
+  <script src="scripts/mode-javascript.js"></script>
+  <script src="scripts/mode-typescript.js"></script>
+  <script src="scripts/mode-xml.js"></script>
+  <script src="scripts/mode-json.js"></script>
+  <script src="scripts/mode-css.js"></script>
+  <script src="scripts/mode-html.js"></script>
+  <script src="scripts/theme-chrome.js"></script>
+  <script src="scripts/ext-searchbox.js"></script>
+  <script src="scripts/worker-base.js"></script>
+  <script src="scripts/worker-javascript.js"></script>
+  <script src="scripts/worker-xml.js"></script>
+  <script src="scripts/worker-json.js"></script>
+  <script src="scripts/worker-css.js"></script>
+  <script src="scripts/worker-html.js"></script>
+</head>
+<body>
+  <!-- The default project's files: the IDE's virtual file system seed. -->
+  <script src="generated/project-data.js"></script>
+  <!-- The IDE's README: Help > About prints it to the console. -->
+  <script src="generated/readme-data.js"></script>
+  <script type="text/javascript" src="./App.js"></script>
+  <script type="text/javascript">
+    new App().start();
+  </script>
+</body>
+</html>
